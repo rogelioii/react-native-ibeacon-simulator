@@ -29,8 +29,8 @@ const BeaconBroadcast = {
       });
     });
   },
-  startAdvertisingBeaconWithString: function (uuid, identifier, major, minor) {
-    NativeBeaconBroadcast.startSharedAdvertisingBeaconWithString(uuid, major, minor, identifier);
+  startAdvertisingBeaconWithString: function (uuid, identifier, major, minor, onError) {
+    NativeBeaconBroadcast.startSharedAdvertisingBeaconWithString(uuid, major, minor, identifier, onError);
   },
 
   stopAdvertisingBeacon: function () {
