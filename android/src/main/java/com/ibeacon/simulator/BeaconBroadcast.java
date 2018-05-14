@@ -110,7 +110,7 @@ public class BeaconBroadcast extends ReactContextBaseJavaModule {
                 }
             });
         } catch (Exception ex) {
-            onError.invoke(ex);
+            onError.invoke(ex.getMessage());
         }
     }
 
