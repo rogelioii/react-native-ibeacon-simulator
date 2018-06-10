@@ -92,11 +92,13 @@ public class BeaconBroadcast extends ReactContextBaseJavaModule {
                     .setId3(String.valueOf(minor))
                     .setManufacturer(manufacturer)
                     .setBluetoothName(identifier)
-                    .setTxPower(-59)
+                    .setTxPower(-56)
                     .build();
             BeaconParser beaconParser = new BeaconParser()
                     .setBeaconLayout("m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24");
+
             this.beaconTransmitter = new BeaconTransmitter(context, beaconParser);
+            this.beaconTransmitter.setAdvertiseTxPowerLevel(-56);
             this.beaconTransmitter.startAdvertising(beacon, new AdvertiseCallback() {
 
                 @Override
