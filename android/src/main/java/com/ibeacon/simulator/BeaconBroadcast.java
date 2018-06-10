@@ -98,7 +98,7 @@ public class BeaconBroadcast extends ReactContextBaseJavaModule {
                     .setBeaconLayout("m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24");
 
             this.beaconTransmitter = new BeaconTransmitter(context, beaconParser);
-//            this.beaconTransmitter.setAdvertiseMode(AdvertiseSettings.ADVERTISE_MODE_BALANCED);
+            this.beaconTransmitter.setAdvertiseMode(AdvertiseSettings.ADVERTISE_MODE_LOW_LATENCY);
             this.beaconTransmitter.setAdvertiseTxPowerLevel(AdvertiseSettings.ADVERTISE_TX_POWER_HIGH);
             this.beaconTransmitter.startAdvertising(beacon, new AdvertiseCallback() {
 
