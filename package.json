@@ -1,8 +1,11 @@
 {
   "name": "react-native-ibeacon-simulator",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "A cool package for simulate your iOS devices as beacon",
   "author": "Flow",
+  "contributors": [
+    "Harvey Connor <harvey@smartguide.com.au> (https://github.com/harveyconnor)"
+  ],
   "nativePackage": true,
   "repository": {
     "type": "git",
