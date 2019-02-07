@@ -1,5 +1,11 @@
 React Native Module that broadcasts an iBeacon uuid.
 
+# Features WIP
+- [x] Create beacon
+- [ ] Allow peripherals to connect to beacon
+- [ ] Read/write characteristics to beacon
+- [ ] Read/write characteristics to central
+
 # Setup
 
 `npm i --save react-native-ibeacon-simulator`
@@ -56,6 +62,11 @@ BeaconBroadcast.checkTransmissionSupported()
   - NOT_SUPPORTED_CANNOT_GET_ADVERTISER_MULTIPLE_ADVERTISEMENTS
 })
 ```
+
+# Contributors
+- William Tran [https://github.com/williamtran29]
+- Dennis Borshchevski [https://github.com/dennis-b]
+- Harvey Connor [https://github.com/harveyconnor]
 
 ## Known supported devices
 
