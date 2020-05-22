@@ -8,9 +8,9 @@ React Native Module that broadcasts an iBeacon uuid.
 
 # Setup
 
-`npm i --save react-native-ibeacon-simulator`
+`npm install --save @jaidis/react-native-ibeacon-simulator`
 
-`react-native link`
+`react-native link @jaidis/react-native-ibeacon-simulator`
 
 Import in your project:
 
@@ -67,6 +67,7 @@ BeaconBroadcast.checkTransmissionSupported()
 - William Tran [https://github.com/williamtran29]
 - Dennis Borshchevski [https://github.com/dennis-b]
 - Harvey Connor [https://github.com/harveyconnor]
+- Manuel Muñoz [https://github.com/jaidis]
 
 ## Known supported devices
 
@@ -101,3 +102,6 @@ Non-exhaustive list of devices where BLE advertising is known to work.
    - ZTE Maven, ZMAX 2, Zmax Pro, Warp Elite
 - Android TVs
    - Sony Bravia 2015
+
+# TODO
+- [ ] Create a types file for the class
