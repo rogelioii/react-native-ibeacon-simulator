@@ -1,20 +1,47 @@
 React Native Module that broadcasts an iBeacon uuid.
 
-# Features WIP
-- [x] Create beacon
-- [ ] Allow peripherals to connect to beacon
-- [ ] Read/write characteristics to beacon
-- [ ] Read/write characteristics to central
-
 # Setup
+```
+npm install --save @jaidis/react-native-ibeacon-simulator
+```
 
-`npm install --save @jaidis/react-native-ibeacon-simulator`
+Please don't try to use react-native link at your RN 0.60.X project
 
-`react-native link @jaidis/react-native-ibeacon-simulator`
+# Setup Android
+
+Add project to `android/settings.gradle`:
+```
+rootProject.name = 'MyApp'
+
+include ':@jaidis_react-native-ibeacon-simulator'
+project(':@jaidis_react-native-ibeacon-simulator').projectDir = new File(rootProject.projectDir, '../node_modules/@jaidis/react-native-ibeacon-simulator/android')
+
+include ':app'
+```
+
+Add in `MainApplication.java`:
+```
+package com.myapp;
+
+import com.ibeacon.simulator.BeaconBroadcastPackage;
+```
+
+# Setup iOS
+
+Add in your `Podfile`
+```
+pod 'BeaconBroadcast', :path => '../node_modules/@jaidis/react-native-ibeacon-simulator'
+```
+
+Then run `pod install`
+
+# Usage
 
 Import in your project:
 
-`import BeaconBroadcast from 'react-native-ibeacon-simulator'`
+```
+`import BeaconBroadcast from '@jaidis/react-native-ibeacon-simulator'`
+```
 
 # API
 
@@ -69,39 +96,11 @@ BeaconBroadcast.checkTransmissionSupported()
 - Harvey Connor [https://github.com/harveyconnor]
 - Manuel Muñoz [https://github.com/jaidis]
 
-## Known supported devices
-
-Non-exhaustive list of devices where BLE advertising is known to work.
-[Brackets] indicate variations besides the base model.
-
-- Phones and tablets
-   - Google Pixel [XL], Pixel C, Nexus 6P, 6, 5X, 9, patched Nexus 5
-   - Alcatel One Touch Idol 3 [Dual SIM], Fierce XL
-   - Asus Zenfone 2 [Laser], Zenpad 8
-   - Blackberry Priv
-   - HTC 10, One M9, Desire (530/626s/820)
-   - Huawei Ascend Y550, Honor 5X, Union
-   - Lenovo K3 Note, Vibe P1m, Vibe K4 Note
-   - LG:
-      * G5, G4 [Stylus], G3, G Flex2, G Vista 2
-	  * V10, K10, L Bello, Lancet, Leon, Magna, Optimus Zone 3, Spirit, Tribute 5
-   - Moto X Play, X Style, X2, G2, G3, G4, Z Droid, Droid Turbo 2
-   - Nextbit Robin
-   - OnePlus 2, 3
-   - OPPO A33f
-   - Samsung Galaxy:
-      * S7 [Edge] - up to 8 concurrent running BLE advertisers
-      * S6 [Active/Edge/Edge Plus], S5 [Active/Neo]
-      * Note 5, Note Edge, Note 4
-      * Tab S2 (8.0/9.7), Tab S (8.4/10.5), Note Pro, Tab A 9.7, Tab E
-      * A5 2016 [Duos]
-      * J5, J3 Duos
-      * Alpha, Core Prime, Grand Prime, On7
-   - Sony Xperia E5, X, Z5 [Compact/Premium], C5 Ultra, C3, M4 Aqua [Dual]
-   - Xiaomi Redmi 3, Note 2, Note 3, Mi 4, Mi 4i, Mi 5, Mi Max
-   - ZTE Maven, ZMAX 2, Zmax Pro, Warp Elite
-- Android TVs
-   - Sony Bravia 2015
+# Features WIP
+- [x] Create beacon
+- [ ] Allow peripherals to connect to beacon
+- [ ] Read/write characteristics to beacon
+- [ ] Read/write characteristics to central
 
 # TODO
 - [ ] Create a types file for the class
