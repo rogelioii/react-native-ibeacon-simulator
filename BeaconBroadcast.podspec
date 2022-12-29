@@ -7,12 +7,12 @@ Pod::Spec.new do |s|
   s.version      = package['version']
   s.summary      = "React Native Module that broadcasts an iBeacon uuid"
 
-  s.authors      = { "Manuel Muñoz" => "manmunlop@gmail.com" }
-  s.homepage     = "https://github.com/jaidis/react-native-ibeacon-simulator"
+  s.authors      = { "Carlos Rivero" => "criveroib@gmail.com" }
+  s.homepage     = "https://github.com/carlosriveroib/react-native-ibeacon-simulator"
   s.license      = "MIT License"
   s.platform     = :ios, "9.0"
 
-  s.source       = { :git => "https://github.com/jaidis/react-native-ibeacon-simulator.git" }
+  s.source       = { :git => "https://github.com/carlosriveroib/react-native-ibeacon-simulator.git" }
   s.source_files  = "ios/**/*.{h,m}"
 
   s.dependency 'React'
