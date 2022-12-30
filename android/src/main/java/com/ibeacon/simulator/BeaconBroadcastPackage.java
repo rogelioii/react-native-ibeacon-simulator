@@ -21,11 +21,6 @@ public class BeaconBroadcastPackage implements ReactPackage {
         return modules;
     }
 
-    @Override
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-        return null;
-    }
-
     @NonNull
     @Override
     public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactContext) {
