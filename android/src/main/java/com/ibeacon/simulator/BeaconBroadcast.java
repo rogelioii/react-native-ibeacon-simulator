@@ -1,11 +1,13 @@
 
 package com.ibeacon.simulator;
 
+import android.annotation.TargetApi;
 import android.bluetooth.le.AdvertiseCallback;
 import android.bluetooth.le.AdvertiseSettings;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.os.Build;
 import android.os.RemoteException;
 import androidx.annotation.NonNull;
 import android.util.Log;
@@ -82,6 +84,7 @@ public class BeaconBroadcast extends ReactContextBaseJavaModule {
         cb.invoke(result);
     }
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @ReactMethod
     public void startSharedAdvertisingBeaconWithString(String uuid, int major, int minor, String identifier, Callback onError) {
         int manufacturer = 0x4C;
