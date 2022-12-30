@@ -1,5 +1,5 @@
 {
-  "name": "@carlosriveroib/react-native-ibeacon-simulator",
+  "name": "@criveroib/react-native-ibeacon-simulator",
   "version": "2.0.0",
   "description": "A cool package for simulate your iOS devices as beacon (compatible with RN 0.59.x)",
   "author": "William Tran <chitran.whitecat@gmail.com>",
@@ -13,7 +13,7 @@
   "nativePackage": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carlosriveroib/react-native-ibeacon-simulator.git"
+    "url": "https://github.com/carlosriveroib/react-native-ibeacon-simulator"
   },
   "keywords": [
     "react-native",

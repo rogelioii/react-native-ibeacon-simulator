@@ -3,7 +3,7 @@ React Native Module that broadcasts an iBeacon uuid.
 # Setup
 
 ```
-npm install --save @carlosriveroib/react-native-ibeacon-simulator
+npm install --save @criveroib/react-native-ibeacon-simulator
 ```
 
 Please don't try to use react-native link at your RN 0.60.X project
@@ -15,8 +15,8 @@ Add project to `android/settings.gradle`:
 ```
 rootProject.name = 'MyApp'
 
-include ':@carlosriveroib_react-native-ibeacon-simulator'
-project(':@carlosriveroib_react-native-ibeacon-simulator').projectDir = new File(rootProject.projectDir, '../node_modules/@carlosriveroib/react-native-ibeacon-simulator/android')
+include ':@criveroib_react-native-ibeacon-simulator'
+project(':@criveroib_react-native-ibeacon-simulator').projectDir = new File(rootProject.projectDir, '../node_modules/@criveroib/react-native-ibeacon-simulator/android')
 
 include ':app'
 ```
@@ -34,7 +34,7 @@ import com.ibeacon.simulator.BeaconBroadcastPackage;
 Add in your `Podfile`
 
 ```
-pod 'BeaconBroadcast', :path => '../node_modules/@carlosriveroib/react-native-ibeacon-simulator'
+pod 'BeaconBroadcast', :path => '../node_modules/@criveroib/react-native-ibeacon-simulator'
 ```
 
 Then run `pod install`
@@ -44,7 +44,7 @@ Then run `pod install`
 Import in your project:
 
 ```
-`import BeaconBroadcast from '@carlosriveroib/react-native-ibeacon-simulator'`
+`import BeaconBroadcast from '@criveroib/react-native-ibeacon-simulator'`
 ```
 
 # API

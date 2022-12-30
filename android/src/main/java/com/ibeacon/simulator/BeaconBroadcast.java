@@ -7,7 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.RemoteException;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
 import android.util.Log;
 
 import com.facebook.react.bridge.ReactApplicationContext;
